@@ -1,0 +1,69 @@
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Auth.Web.deps.json
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Auth.Web.runtimeconfig.json
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Auth.Web.runtimeconfig.dev.json
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Auth.Web.dll
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Auth.Web.pdb
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.DTO.dll
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.MessageQueue.dll
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.Utils.dll
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.DTO.pdb
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.MessageQueue.pdb
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.Utils.pdb
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.csprojAssemblyReference.cache
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.csproj.CoreCompileInputs.cache
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.RazorAssemblyInfo.cache
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.RazorAssemblyInfo.cs
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.AssemblyInfoInputs.cache
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.AssemblyInfo.cs
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.RazorTargetAssemblyInfo.cache
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.csproj.CopyComplete
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.dll
+C:\Users\Monosoft(Ruben)\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.pdb
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Auth.Web.deps.json
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Auth.Web.runtimeconfig.json
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Auth.Web.runtimeconfig.dev.json
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Auth.Web.dll
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Auth.Web.pdb
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.DTO.dll
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.MessageQueue.dll
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.Utils.dll
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.DTO.pdb
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.DTO.xml
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.MessageQueue.pdb
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.MessageQueue.xml
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.Utils.pdb
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.Utils.xml
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.csprojAssemblyReference.cache
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.csproj.CoreCompileInputs.cache
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.RazorAssemblyInfo.cache
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.RazorAssemblyInfo.cs
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.AssemblyInfoInputs.cache
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.AssemblyInfo.cs
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.RazorTargetAssemblyInfo.cache
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.csproj.CopyComplete
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.dll
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.pdb
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Auth.Web.deps.json
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Auth.Web.runtimeconfig.json
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Auth.Web.runtimeconfig.dev.json
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Auth.Web.dll
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Auth.Web.pdb
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.DTO.dll
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.MessageQueue.dll
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.Utils.dll
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.DTO.pdb
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.DTO.xml
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.MessageQueue.pdb
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.MessageQueue.xml
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.Utils.pdb
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\bin\Debug\netcoreapp2.1\Monosoft.Common.Utils.xml
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.csprojAssemblyReference.cache
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.csproj.CoreCompileInputs.cache
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.RazorAssemblyInfo.cache
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.RazorAssemblyInfo.cs
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.AssemblyInfoInputs.cache
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.AssemblyInfo.cs
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.RazorTargetAssemblyInfo.cache
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.csproj.CopyComplete
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.dll
+E:\lektions\Last\MyRanch\Serverside\Auth\Monosoft.Auth.Web\obj\Debug\netcoreapp2.1\Monosoft.Auth.Web.pdb

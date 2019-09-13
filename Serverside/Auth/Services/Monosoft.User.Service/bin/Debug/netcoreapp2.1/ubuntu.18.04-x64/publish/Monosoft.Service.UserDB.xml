@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Monosoft.User.Service</name>
+    </assembly>
+    <members>
+        <member name="T:Monosoft.Service.UserDB.GlobalValues">
+            <summary>
+            Contains the global values for this program
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.UserDB.GlobalValues.ServiceName">
+            <summary>
+            Global value for the services name
+            </summary>
+            <returns>The full servicename, including its unique id</returns>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.Scope">
+            <summary>
+            Scope
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteTokenInvalidateToken">
+            <summary>
+            Route information for invalidate
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteTokenInvalidateUser">
+            <summary>
+            Route information for invalidate
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteUserGroupCreated">
+            <summary>
+            Route information for user group created event
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteUserGroupUpdated">
+            <summary>
+            Route information for user group updated event
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteUserGroupDeleted">
+            <summary>
+            Route information for user group deleted event
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteUserGroupRead">
+            <summary>
+            Route information for user group read event
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteUserCreated">
+            <summary>
+            Route information for user created event
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteUserUpdated">
+            <summary>
+            Route information for user updated event
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteUserDeleted">
+            <summary>
+            Route information for user deleted event
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteUserRead">
+            <summary>
+            Route information for user read event
+            </summary>
+        </member>
+        <member name="T:Monosoft.Service.UserDB.MessageHandlers.UserGroupQueueHandler">
+            <summary>
+            Handle usergroup messages
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.UserDB.MessageHandlers.UserGroupQueueHandler.HandleMessage(System.String[],Monosoft.Common.DTO.MessageWrapper)">
+            <summary>
+            Handle incomming usergroup requests
+            </summary>
+            <param name="topicparts">list of topicparts</param>
+            <param name="wrapper">messagewrapper</param>
+            <returns>null</returns>
+        </member>
+        <member name="T:Monosoft.Service.UserDB.MessageHandlers.UserQueueHandler">
+            <summary>
+            Message handler for "user" messages (i.e. user.#)
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.UserDB.MessageHandlers.UserQueueHandler.HandleMessage(System.String[],Monosoft.Common.DTO.MessageWrapper)">
+            <summary>
+            Handle an incomming message
+            </summary>
+            <param name="topicparts">The topic/route as a list of strings</param>
+            <param name="wrapper">Message wrapper</param>
+            <returns>NULL</returns>
+        </member>
+        <member name="T:Monosoft.Service.UserDB.Program">
+            <summary>
+            UserDB contains logic for handling security (Users and usergroups through tokens) through rabbitMQ
+            </summary>
+        </member>
+    </members>
+</doc>

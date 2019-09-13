@@ -1,0 +1,280 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.TokenHandler\\Monosoft.Common.TokenHandler.csproj": {}
+  },
+  "projects": {
+    "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.DTO\\Monosoft.Common.DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.DTO\\Monosoft.Common.DTO.csproj",
+        "projectName": "Monosoft.Common.DTO",
+        "projectPath": "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.DTO\\Monosoft.Common.DTO.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.DTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.Utils\\Monosoft.Common.Utils.csproj": {
+                "projectPath": "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.Utils\\Monosoft.Common.Utils.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.MessageQueue\\Monosoft.Common.MessageQueue.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.MessageQueue\\Monosoft.Common.MessageQueue.csproj",
+        "projectName": "Monosoft.Common.MessageQueue",
+        "projectPath": "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.MessageQueue\\Monosoft.Common.MessageQueue.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.MessageQueue\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.DTO\\Monosoft.Common.DTO.csproj": {
+                "projectPath": "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.DTO\\Monosoft.Common.DTO.csproj"
+              },
+              "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.Utils\\Monosoft.Common.Utils.csproj": {
+                "projectPath": "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.Utils\\Monosoft.Common.Utils.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[11.0.2, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.TokenHandler\\Monosoft.Common.TokenHandler.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.TokenHandler\\Monosoft.Common.TokenHandler.csproj",
+        "projectName": "Monosoft.Common.TokenHandler",
+        "projectPath": "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.TokenHandler\\Monosoft.Common.TokenHandler.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.TokenHandler\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.DTO\\Monosoft.Common.DTO.csproj": {
+                "projectPath": "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.DTO\\Monosoft.Common.DTO.csproj"
+              },
+              "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.MessageQueue\\Monosoft.Common.MessageQueue.csproj": {
+                "projectPath": "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.MessageQueue\\Monosoft.Common.MessageQueue.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[11.0.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.Utils\\Monosoft.Common.Utils.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.Utils\\Monosoft.Common.Utils.csproj",
+        "projectName": "Monosoft.Common.Utils",
+        "projectPath": "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.Utils\\Monosoft.Common.Utils.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "E:\\lektions\\EksamenMyVersion\\Serverside\\Common\\Monosoft.Common.Utils\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[11.0.2, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.2, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

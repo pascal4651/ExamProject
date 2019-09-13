@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Monosoft.Common.MessageQueue</name>
+    </assembly>
+    <members>
+        <member name="T:Monosoft.Common.MessageQueue.Diagnostics">
+            <summary>
+            Diagnostics gather information about the current process and the machine it is running on
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.MessageQueue.Diagnostics.Instance">
+            <summary>
+            Gets the singleton access to the diagnostics object
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.MessageQueue.Diagnostics.CurrentSettings">
+            <summary>
+            Gets or sets the current/active diagnostics settings
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.MessageQueue.Diagnostics.Initialize(System.String,System.String)">
+            <summary>
+            Initialize the diagnostics object (thread)
+            </summary>
+            <param name="serviceName">Name of the microservice the diagnostics is running on</param>
+            <param name="programVersion">The programs versions number</param>
+        </member>
+        <member name="M:Monosoft.Common.MessageQueue.Diagnostics.LogEvent(System.String,System.String,Monosoft.Common.DTO.Severity,System.String)">
+            <summary>
+            Writes a event to the message-queue, which is helpfull for gathering informations on our dashboard
+            </summary>
+            <param name="title">A brief title/subject description about the event</param>
+            <param name="message">Detailed information about the event</param>
+            <param name="severity">The severity of the event</param>
+            <param name="organisation">The organisation context that the event was raised in</param>
+        </member>
+        <member name="M:Monosoft.Common.MessageQueue.Diagnostics.LogEvent(System.String,System.String,Monosoft.Common.DTO.Severity,Monosoft.Common.DTO.MetaData,System.String)">
+            <summary>
+            Writes a event to the message-queue, which is helpfull for gathering informations on our dashboard
+            </summary>
+            <param name="title">A brief title/subject description about the event</param>
+            <param name="message">Detailed information about the event</param>
+            <param name="severity">The severity of the event</param>
+            <param name="metadata">Metadata about the event, this would normally be parameters for the method from where the event was raised</param>
+            <param name="organisation">The organisation context that the event was raised in</param>
+        </member>
+        <member name="M:Monosoft.Common.MessageQueue.Diagnostics.LogEvent(System.String,System.String,Monosoft.Common.DTO.Severity,System.Collections.Generic.List{Monosoft.Common.DTO.MetaData},System.String)">
+            <summary>
+            Writes a event to the message-queue, which is helpfull for gathering informations on our dashboard
+            </summary>
+            <param name="title">A brief title/subject description about the event</param>
+            <param name="message">Detailed information about the event</param>
+            <param name="severity">The severity of the event</param>
+            <param name="metadata">Metadata about the event, this would normally be parameters for the method from where the event was raised</param>
+            <param name="organisation">The organisation context that the event was raised in</param>
+        </member>
+        <member name="M:Monosoft.Common.MessageQueue.Diagnostics.HeatbeatWorker(System.String,Monosoft.Common.DTO.DiagnosticsSettings)">
+            <summary>
+            Updates the current settings and starts the diagnostics thread if needed
+            </summary>
+            <param name="servicename">Name of the microservice which the diagnostics is running within</param>
+            <param name="settings">The settings to be used</param>
+        </member>
+        <member name="T:Monosoft.Common.MessageQueue.EventClient">
+            <summary>
+            A client for sending events to the message queue
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.MessageQueue.EventClient.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Monosoft.Common.MessageQueue.EventClient"/> class.
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.MessageQueue.EventClient.Instance">
+            <summary>
+            Gets the singleton instance of the client
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.MessageQueue.EventClient.RaiseEvent(System.String,Monosoft.Common.DTO.EventDTO)">
+            <summary>
+            Places an event on the message queue
+            </summary>
+            <param name="route">The topic/route of the event (ex. user.created)</param>
+            <param name="eventdata">The event details</param>
+        </member>
+        <member name="M:Monosoft.Common.MessageQueue.EventClient.Close">
+            <summary>
+            Close the connection
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.MessageQueue.EventConfiguration">
+            <summary>
+            Configuration for event messages
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.MessageQueue.EventConfiguration.#ctor(System.String,System.String,Monosoft.Common.MessageQueue.MessageFlow.EventHandler)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Monosoft.Common.MessageQueue.EventConfiguration"/> class.
+            </summary>
+            <param name="queueName">Name of the queue that the messages are to be placed in</param>
+            <param name="routingKey">Name of the routing which messages are to be placed on the queue</param>
+            <param name="handler">The message handler</param>
+        </member>
+        <member name="P:Monosoft.Common.MessageQueue.EventConfiguration.Handler">
+            <summary>
+            Gets or sets the handler, for handling events
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.MessageQueue.MessageFlow">
+            <summary>
+            Class for handling the generic part of the messageflow, unwrapping the wrapper and handling diagnostics
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.MessageQueue.MessageFlow.MessageHandler">
+            <summary>
+            A delegate description for handling request messages
+            </summary>
+            <param name="topicparts">a list of route parts (ex: [user, create])</param>
+            <param name="wrapper">The messagewrapper object</param>
+            <returns>the returning object serialised as json and converted to utf8 byte array</returns>
+        </member>
+        <member name="T:Monosoft.Common.MessageQueue.MessageFlow.EventHandler">
+            <summary>
+            A delegate description for handling event messages
+            </summary>
+            <param name="topicparts">a list of route parts (ex: [user, create])</param>
+            <param name="data">The eventdto object</param>
+        </member>
+        <member name="M:Monosoft.Common.MessageQueue.MessageFlow.HandleMessage(System.String,RabbitMQ.Client.Events.BasicDeliverEventArgs,Monosoft.Common.MessageQueue.MessageFlow.MessageHandler)">
+            <summary>
+            Handles the basic messageflow, including traceing
+            </summary>
+            <param name="servicename">name of the calling service (used for traceing)</param>
+            <param name="ea">the rabbitMQ delivery event</param>
+            <param name="handler">the message handler for handling specifik logic</param>
+            <returns>a messagewrapper for with the resulting response</returns>
+        </member>
+        <member name="M:Monosoft.Common.MessageQueue.MessageFlow.HandleEvent(System.String,RabbitMQ.Client.Events.BasicDeliverEventArgs,Monosoft.Common.MessageQueue.MessageFlow.EventHandler)">
+            <summary>
+            Handles the basic messageflow for events
+            </summary>
+            <param name="servicename">name of the calling service</param>
+            <param name="ea">the rabbitMQ delivery event</param>
+            <param name="handler">the message handler for handling specifik logic</param>
+        </member>
+        <member name="T:Monosoft.Common.MessageQueue.MessageQueueConfiguration">
+            <summary>
+            An abstract class for messagequeueconfiguration - please us a concrete class such as EventConfiguration or RequestConfiguration
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.MessageQueue.MessageQueueConfiguration.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Monosoft.Common.MessageQueue.MessageQueueConfiguration"/> class.
+            </summary>
+            <param name="exchangeName">Name of the exchange from where messages are received</param>
+            <param name="queueName">Name of the queue onto where messages are to be placed</param>
+            <param name="routingKey">Define the route that describes the messages to be placed in the queue</param>
+        </member>
+        <member name="P:Monosoft.Common.MessageQueue.MessageQueueConfiguration.ExchangeName">
+            <summary>
+            Gets or sets ExchangeName
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.MessageQueue.MessageQueueConfiguration.QueueName">
+            <summary>
+            Gets or sets QueueName
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.MessageQueue.MessageQueueConfiguration.RoutingKey">
+            <summary>
+            Gets or sets RoutingKey
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.MessageQueue.RequestClient">
+            <summary>
+            Client for publishing messages to the request exchange
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.MessageQueue.RequestClient.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Monosoft.Common.MessageQueue.RequestClient"/> class.
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.MessageQueue.RequestClient.Instance">
+            <summary>
+            Gets the singleton instance of the request client
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.MessageQueue.RequestClient.Rpc(System.String,System.Byte[])">
+            <summary>
+            Make a RemoteProcedureCall, which willl only return once a result is returned from the server
+            </summary>
+            <param name="routingkey">routing key</param>
+            <param name="bytes">data as utf8 byte array of the json representation</param>
+            <returns>resulting object as utf8 bytearray</returns>
+        </member>
+        <member name="M:Monosoft.Common.MessageQueue.RequestClient.FAF(System.String,System.Byte[])">
+            <summary>
+            Fire And Forget, which just places a message on the queue (very fast!)
+            </summary>
+            <param name="routingkey">routingkey</param>
+            <param name="data">data</param>
+        </member>
+        <member name="M:Monosoft.Common.MessageQueue.RequestClient.Close">
+            <summary>
+            Close the connection to the messagequeue
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.MessageQueue.RequestConfiguration">
+            <summary>
+            Settings for handling a specific route on the messagequeue comming in via the ms.request exchange
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.MessageQueue.RequestConfiguration.#ctor(System.String,System.String,Monosoft.Common.MessageQueue.MessageFlow.MessageHandler)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Monosoft.Common.MessageQueue.RequestConfiguration"/> class.
+            </summary>
+            <param name="queueName">Name of the queue onto where messages are to be placed</param>
+            <param name="routingKey">Defines the routing of the messages that are to be placed in the queue (ex. user.#)</param>
+            <param name="handler">A method for handling the messages / the business logic</param>
+        </member>
+        <member name="P:Monosoft.Common.MessageQueue.RequestConfiguration.Handler">
+            <summary>
+            Gets or sets the method for handling the messages
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.MessageQueue.RequestServer">
+            <summary>
+            The request server is used to consume messages that are issued to the request exchange
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.MessageQueue.RequestServer.#ctor(System.Collections.Generic.List{Monosoft.Common.MessageQueue.MessageQueueConfiguration})">
+            <summary>
+            Initializes a new instance of the <see cref="T:Monosoft.Common.MessageQueue.RequestServer"/> class.
+            Starts the request server, so that it will consume messages from the request (ms.request) exchange
+            </summary>
+            <param name="settings">List of topic/routes that are consumed by this server</param>
+        </member>
+    </members>
+</doc>

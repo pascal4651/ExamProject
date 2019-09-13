@@ -1,0 +1,8 @@
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.Backend\bin\Debug\netcoreapp2.1\Monosoft.Common.Backend.deps.json
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.Backend\bin\Debug\netcoreapp2.1\Monosoft.Common.Backend.dll
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.Backend\obj\Debug\netcoreapp2.1\Monosoft.Common.Backend.csproj.CoreCompileInputs.cache
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.Backend\obj\Debug\netcoreapp2.1\Monosoft.Common.Backend.AssemblyInfoInputs.cache
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.Backend\obj\Debug\netcoreapp2.1\Monosoft.Common.Backend.AssemblyInfo.cs
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.Backend\bin\Debug\netcoreapp2.1\Monosoft.Common.Backend.pdb
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.Backend\obj\Debug\netcoreapp2.1\Monosoft.Common.Backend.dll
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.Backend\obj\Debug\netcoreapp2.1\Monosoft.Common.Backend.pdb

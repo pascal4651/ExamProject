@@ -1,0 +1,12 @@
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\RabbitMQWrapper\bin\Debug\netcoreapp2.1\RabbitMQWrapper.deps.json
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\RabbitMQWrapper\bin\Debug\netcoreapp2.1\RabbitMQWrapper.dll
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\RabbitMQWrapper\obj\Debug\netcoreapp2.1\RabbitMQWrapper.csproj.CoreCompileInputs.cache
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\RabbitMQWrapper\obj\Debug\netcoreapp2.1\RabbitMQWrapper.AssemblyInfoInputs.cache
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\RabbitMQWrapper\obj\Debug\netcoreapp2.1\RabbitMQWrapper.AssemblyInfo.cs
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\RabbitMQWrapper\bin\Debug\netcoreapp2.1\RabbitMQWrapper.pdb
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\RabbitMQWrapper\bin\Debug\netcoreapp2.1\Monosoft.Common.Backend.dll
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\RabbitMQWrapper\bin\Debug\netcoreapp2.1\Monosoft.Common.Backend.pdb
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\RabbitMQWrapper\obj\Debug\netcoreapp2.1\RabbitMQWrapper.csprojAssemblyReference.cache
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\RabbitMQWrapper\obj\Debug\netcoreapp2.1\RabbitMQWrapper.csproj.CopyComplete
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\RabbitMQWrapper\obj\Debug\netcoreapp2.1\RabbitMQWrapper.dll
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\RabbitMQWrapper\obj\Debug\netcoreapp2.1\RabbitMQWrapper.pdb

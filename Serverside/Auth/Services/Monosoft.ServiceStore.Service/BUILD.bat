@@ -1,0 +1,1 @@
+dotnet publish -r -c Release --self-contained --runtime ubuntu.18.04-x64 

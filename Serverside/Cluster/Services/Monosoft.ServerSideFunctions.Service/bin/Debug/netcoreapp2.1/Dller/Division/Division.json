@@ -1,0 +1,1 @@
+{"Id":"","Name":"Division","FunctionData":"namespace Temp\r\n{\r\n    public class MyClass\r\n    {\r\n        public int Division(int a, int b)\r\n        {\r\n            return a/b;\r\n        }\r\n    }\r\n}"}

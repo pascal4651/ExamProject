@@ -1,0 +1,96 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            <table style="width:100%">
+                <tr>
+                    <td>
+                        <input type="text" id="id" style="width:300px" />
+                        <label> ID</label>
+                        <br />
+                        <br />
+                        <input type="text" id="functionName" style="width:300px" />
+                        <label> Function Name</label>
+                        <br />
+                        <br />
+                        <input type="text" id="parameters" style="width:300px" disabled />
+                        <label> Parameters</label>
+                    </td>
+                    <td style="width:50%">
+                        <input type="text" id="link" style="width:90%; background-color:yellow; color:darkblue" />
+                        <br />
+                        <br />
+                        <select id="requestType" style="width:150px;height:40px">
+                            <option value="fafSignalR">FAF (SignalR)</option>
+                            <option value="rpcSignalR">RPC (SignalR)</option>
+                            <option value="fafHttp">FAF (Http)</option>
+                            <option value="rpcHttp">RPC (Http)</option>
+                        </select>
+                        <br />
+                        <br />
+                        <label style="color:blue">LANGUAGE: </label>
+                        <input type="radio" id="sharp" name="language" style="margin-left:5px" value="C#" checked />C#
+                        <input type="radio" id="javascript" name="language" style="margin-left:5px" value="JS" />JS
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr /></td>
+                </tr>
+                <tr>
+                    <td style="width:50%">
+                        <span class="label label-success">FUNCTION</span>
+                        <br />
+                        <textarea id="function" style="width:90%; height:300px; white-space:pre; overflow-x:auto;"></textarea>
+                        <br />
+                    </td>
+                    <td style="width:50%">
+                        <span class="label label-warning">RESULT</span>
+                        <br />
+                        <textarea id="result" style="width:90%; height:300px; white-space:pre; overflow-x:auto;" readonly></textarea>
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <br />
+                        <hr />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:50%">
+                        <select id="operation" style="width:200px;height:40px">
+                            <option value="create">CREATE</option>
+                            <option value="delete">DELETE</option>
+                            <option value="update">UPDATE</option>
+                            <option value="read">READ</option>
+                            <option value="readall">READ All</option>
+                            <option value="run">RUN</option>
+                        </select>
+                    </td>
+                    <td style="width:50%">
+                        <input type="button" id="postButton" value="POST" style="height:40px; width:120px; float:right; margin-right:50px" class="btn-primary" />
+                        <div id="spinner" style="display:none">
+                            <img src="~/images/processing.gif" alt="processing" style="width:40%; height:40px; float:left; margin-right:30px" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/lib/aspnet/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/chat.js"></script>
+}

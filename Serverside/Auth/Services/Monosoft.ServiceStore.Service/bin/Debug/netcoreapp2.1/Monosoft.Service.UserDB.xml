@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Monosoft.ServiceStore.Service</name>
+    </assembly>
+    <members>
+        <member name="T:Monosoft.ServiceStore.Service.ClaimDefinitions">
+            <summary>
+            Contains the claims used by UserDB to handle security levels
+            </summary>
+        </member>
+        <member name="F:Monosoft.ServiceStore.Service.ClaimDefinitions.Definitions">
+            <summary>
+            Definitions of the claims used for controlling security in this service
+            </summary>
+        </member>
+        <member name="F:Monosoft.ServiceStore.Service.ClaimDefinitions.ServiceStoreAdmin">
+            <summary>
+            The admin claim, which gives the user the rights for maintaining security
+            </summary>
+        </member>
+        <member name="F:Monosoft.ServiceStore.Service.GlobalValues.ClusterName">
+            <summary>
+            Name of the service
+            </summary>
+        </member>
+        <member name="T:Monosoft.ServiceStore.Service.MessageHandlers.CallContext">
+            <summary>
+            The caller context, used for validating access rights
+            </summary>
+        </member>
+        <member name="M:Monosoft.ServiceStore.Service.MessageHandlers.CallContext.#ctor(System.Guid,Monosoft.Common.DTO.Token,System.DateTime)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Monosoft.ServiceStore.Service.MessageHandlers.CallContext"/> class.
+            </summary>
+            <param name="organisation">Organisation context</param>
+            <param name="token">The user context (represented as a token)</param>
+            <param name="issueDate">The date/time for which the access rights are cheked (the date the command was issued)</param>
+        </member>
+        <member name="P:Monosoft.ServiceStore.Service.MessageHandlers.CallContext.UserId">
+            <summary>
+            Gets or sets UserId
+            </summary>
+        </member>
+        <member name="P:Monosoft.ServiceStore.Service.MessageHandlers.CallContext.Scope">
+            <summary>
+            Gets or sets Scope
+            </summary>
+        </member>
+        <member name="P:Monosoft.ServiceStore.Service.MessageHandlers.CallContext.CurrentUserToken">
+            <summary>
+            Gets or sets CurrentUserToken
+            </summary>
+        </member>
+        <member name="P:Monosoft.ServiceStore.Service.MessageHandlers.CallContext.OrganisationId">
+            <summary>
+            Gets or sets OrganisationId
+            </summary>
+        </member>
+        <member name="P:Monosoft.ServiceStore.Service.MessageHandlers.CallContext.IsServiceStoreAdmin">
+            <summary>
+            Gets or sets a value indicating whether IsSystemAdministrator is true
+            </summary>
+        </member>
+        <member name="T:Monosoft.Service.UserDB.GlobalValues">
+            <summary>
+            Contains the global values for this program
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.Scope">
+            <summary>
+            Scope
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteTokenInvalidateToken">
+            <summary>
+            Route information for invalidate
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteTokenInvalidateUser">
+            <summary>
+            Route information for invalidate
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteUserGroupCreated">
+            <summary>
+            Route information for user group created event
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteUserGroupUpdated">
+            <summary>
+            Route information for user group updated event
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteUserGroupDeleted">
+            <summary>
+            Route information for user group deleted event
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteUserGroupRead">
+            <summary>
+            Route information for user group read event
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteUserCreated">
+            <summary>
+            Route information for user created event
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteUserUpdated">
+            <summary>
+            Route information for user updated event
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteUserDeleted">
+            <summary>
+            Route information for user deleted event
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.UserDB.GlobalValues.RouteUserRead">
+            <summary>
+            Route information for user read event
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.UserDB.GlobalValues.ServiceName">
+            <summary>
+            Global value for the services name
+            </summary>
+            <returns>The full servicename, including its unique id</returns>
+        </member>
+        <member name="T:Monosoft.Service.UserDB.MessageHandlers.ServiceStoreQueueHandler">
+            <summary>
+            Message handler for "user" messages (i.e. user.#)
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.UserDB.MessageHandlers.ServiceStoreQueueHandler.HandleMessage(System.String[],Monosoft.Common.DTO.MessageWrapper)">
+            <summary>
+            Handle an incomming message
+            </summary>
+            <param name="topicparts">The topic/route as a list of strings</param>
+            <param name="wrapper">Message wrapper</param>
+            <returns>NULL</returns>
+        </member>
+        <member name="T:Monosoft.Service.UserDB.Program">
+            <summary>
+            UserDB contains logic for handling security (Users and usergroups through tokens) through rabbitMQ
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monosoft.Common.DTO", "..\..\Common\Monosoft.Common.DTO\Monosoft.Common.DTO.csproj", "{4CC669A0-F55D-4A81-8D67-2CAA127FC517}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monosoft.Common.Utils", "..\..\Common\Monosoft.Common.Utils\Monosoft.Common.Utils.csproj", "{7A328237-5201-46D1-8B67-D04CA96DC002}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monosoft.Common.MessageQueue", "..\..\Common\Monosoft.Common.MessageQueue\Monosoft.Common.MessageQueue.csproj", "{7098DBA4-B0F9-4164-8D88-43B51577364B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monosoft.Common.TokenHandler", "..\..\Common\Monosoft.Common.TokenHandler\Monosoft.Common.TokenHandler.csproj", "{7B9F9FC6-BDA9-42F4-BBD6-6CA42E7742B4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monosoft.Auth.DTO", "..\..\Auth\Monosoft.Auth.DTO\Monosoft.Auth.DTO.csproj", "{BA5EB581-FC26-45C9-B98B-8619616EFADD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monosoft.Organisation.Service", "Monosoft.Organisation.Service\Monosoft.Organisation.Service.csproj", "{F4C867F1-16F7-407E-8FA7-D05290E4987C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CC669A0-F55D-4A81-8D67-2CAA127FC517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC669A0-F55D-4A81-8D67-2CAA127FC517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC669A0-F55D-4A81-8D67-2CAA127FC517}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC669A0-F55D-4A81-8D67-2CAA127FC517}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A328237-5201-46D1-8B67-D04CA96DC002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A328237-5201-46D1-8B67-D04CA96DC002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A328237-5201-46D1-8B67-D04CA96DC002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A328237-5201-46D1-8B67-D04CA96DC002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7098DBA4-B0F9-4164-8D88-43B51577364B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7098DBA4-B0F9-4164-8D88-43B51577364B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7098DBA4-B0F9-4164-8D88-43B51577364B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7098DBA4-B0F9-4164-8D88-43B51577364B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B9F9FC6-BDA9-42F4-BBD6-6CA42E7742B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B9F9FC6-BDA9-42F4-BBD6-6CA42E7742B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B9F9FC6-BDA9-42F4-BBD6-6CA42E7742B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B9F9FC6-BDA9-42F4-BBD6-6CA42E7742B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA5EB581-FC26-45C9-B98B-8619616EFADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA5EB581-FC26-45C9-B98B-8619616EFADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA5EB581-FC26-45C9-B98B-8619616EFADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA5EB581-FC26-45C9-B98B-8619616EFADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4C867F1-16F7-407E-8FA7-D05290E4987C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4C867F1-16F7-407E-8FA7-D05290E4987C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4C867F1-16F7-407E-8FA7-D05290E4987C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4C867F1-16F7-407E-8FA7-D05290E4987C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B59041F-DD1D-4D59-B464-B8E1ABBC016E}
+	EndGlobalSection
+EndGlobal

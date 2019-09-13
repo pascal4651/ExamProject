@@ -1,0 +1,14 @@
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.AuthDTO\bin\Debug\netcoreapp2.1\Monosoft.Common.AuthDTO.deps.json
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.AuthDTO\bin\Debug\netcoreapp2.1\Monosoft.Common.AuthDTO.dll
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.AuthDTO\bin\Debug\netcoreapp2.1\Monosoft.Common.AuthDTO.pdb
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.AuthDTO\bin\Debug\netcoreapp2.1\Monosoft.Common.Backend.dll
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.AuthDTO\bin\Debug\netcoreapp2.1\Monosoft.Common.DTO.dll
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.AuthDTO\bin\Debug\netcoreapp2.1\Monosoft.Common.DTO.pdb
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.AuthDTO\bin\Debug\netcoreapp2.1\Monosoft.Common.Backend.pdb
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.AuthDTO\obj\Debug\netcoreapp2.1\Monosoft.Common.AuthDTO.csprojAssemblyReference.cache
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.AuthDTO\obj\Debug\netcoreapp2.1\Monosoft.Common.AuthDTO.csproj.CoreCompileInputs.cache
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.AuthDTO\obj\Debug\netcoreapp2.1\Monosoft.Common.AuthDTO.AssemblyInfoInputs.cache
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.AuthDTO\obj\Debug\netcoreapp2.1\Monosoft.Common.AuthDTO.AssemblyInfo.cs
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.AuthDTO\obj\Debug\netcoreapp2.1\Monosoft.Common.AuthDTO.csproj.CopyComplete
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.AuthDTO\obj\Debug\netcoreapp2.1\Monosoft.Common.AuthDTO.dll
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\AuthWebApi\Monosoft.Common.AuthDTO\obj\Debug\netcoreapp2.1\Monosoft.Common.AuthDTO.pdb

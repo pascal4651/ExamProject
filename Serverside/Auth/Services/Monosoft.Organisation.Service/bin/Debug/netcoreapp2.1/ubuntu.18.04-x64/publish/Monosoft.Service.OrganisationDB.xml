@@ -1,0 +1,609 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Monosoft.Organisation.Service</name>
+    </assembly>
+    <members>
+        <member name="T:Monosoft.Service.OrganisationDB.ClaimDefinitions">
+            <summary>
+            Contains the claims used by UserDB to handle security levels
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.OrganisationDB.ClaimDefinitions.Definitions">
+            <summary>
+            Global list of claim definitions for this microservice
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.OrganisationDB.ClaimDefinitions.IsSysAdm">
+            <summary>
+            The claim definition for system admins
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.OrganisationDB.ClaimDefinitions.IsKeyAccountManager">
+            <summary>
+            The claim definition for key account managers
+            </summary>
+        </member>
+        <member name="T:Monosoft.Service.OrganisationDB.Datalayer.Cluster">
+            <summary>
+            Cluster definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Cluster.ClusterId">
+            <summary>
+            Gets or sets ClusterId
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Cluster.Name">
+            <summary>
+            Gets or sets Name
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Cluster.Endpoints">
+            <summary>
+            Gets or sets Endpoints
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Cluster.Servers">
+            <summary>
+            Gets or sets Servers
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Cluster.Organisations">
+            <summary>
+            Gets or sets Organisations
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.Cluster.Create(Monosoft.Auth.DTO.Cluster)">
+            <summary>
+            Creates a cluster
+            </summary>
+            <param name="cluster">the cluster definition to insert into the database</param>
+            <returns>The created cluster</returns>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.Cluster.Update(Monosoft.Auth.DTO.Cluster)">
+            <summary>
+            Update a cluster
+            </summary>
+            <param name="cluster">the cluster definition to updated in the database</param>
+            <returns>The updated cluster</returns>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.Cluster.Delete(System.Int32)">
+            <summary>
+            Delete a cluster
+            </summary>
+            <param name="id">The id of the cluster to be delted</param>
+            <returns>true if it was deleted</returns>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.Cluster.Read(System.Guid)">
+            <summary>
+            Find all clusters for a given organisation
+            </summary>
+            <param name="organisationId">find all clusters for this organisation</param>
+            <returns>list of clusters for the organisation</returns>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.Cluster.ConvertToDTO(Monosoft.Service.OrganisationDB.Datalayer.Cluster)">
+            <summary>
+            Converts a cluster (db) to a DTO
+            </summary>
+            <param name="c">the cluster to convert</param>
+            <returns>The cluster as a DTO</returns>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.Cluster.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Database definition
+            </summary>
+            <param name="modelBuilder">modelbuilder</param>
+        </member>
+        <member name="T:Monosoft.Service.OrganisationDB.Datalayer.Contract">
+            <summary>
+            Contract definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Contract.ContractNo">
+            <summary>
+            Gets or sets ContractNo
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Contract.Organisation">
+            <summary>
+            Gets or sets Organisation
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Contract.Title">
+            <summary>
+            Gets or sets Title
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Contract.Description">
+            <summary>
+            Gets or sets Description
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Contract.Base64File">
+            <summary>
+            Gets or sets Base64File
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Contract.Payout">
+            <summary>
+            Gets or sets Payout
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Contract.OngoingPayment">
+            <summary>
+            Gets or sets OngoingPayment
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Contract.Interval">
+            <summary>
+            Gets or sets Interval
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Contract.NextInvoicedate">
+            <summary>
+            Gets or sets NextInvoicedate
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Contract.IsActive">
+            <summary>
+            Gets or sets a value indicating whether the contract is active
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.Contract.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Database definition
+            </summary>
+            <param name="modelBuilder">modelbuilder</param>
+        </member>
+        <member name="T:Monosoft.Service.OrganisationDB.Datalayer.DataContext">
+            <summary>
+            The datacontext / database connection
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.DataContext.Instance">
+            <summary>
+            Gets the singleton access to the database
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.DataContext.Clusters">
+            <summary>
+            Gets or sets Clusters
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.DataContext.Contracts">
+            <summary>
+            Gets or sets Contracts
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.DataContext.Invoices">
+            <summary>
+            Gets or sets Invoices
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.DataContext.Organisations">
+            <summary>
+            Gets or sets Organisations
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.DataContext.OrganisationMetadatas">
+            <summary>
+            Gets or sets OrganisationMetadatas
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.DataContext.Servers">
+            <summary>
+            Gets or sets Servers
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.DataContext.MicroServices">
+            <summary>
+            Gets or sets MicroServices
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.DataContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            Initialize the database connection
+            </summary>
+            <param name="optionsBuilder">option builder</param>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.DataContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Database definitions
+            </summary>
+            <param name="modelBuilder">model builder</param>
+        </member>
+        <member name="T:Monosoft.Service.OrganisationDB.Datalayer.Invoice">
+            <summary>
+            Customer invoices for using the ranch
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Invoice.InvoiceNo">
+            <summary>
+            Gets or sets InvoiceNo
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Invoice.Amout">
+            <summary>
+            Gets or sets Amout
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Invoice.Status">
+            <summary>
+            Gets or sets Status
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Invoice.DueDate">
+            <summary>
+            Gets or sets DueDate
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Invoice.Invoicedate">
+            <summary>
+            Gets or sets Invoicedate
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Invoice.Titel">
+            <summary>
+            Gets or sets Titel
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Invoice.Details">
+            <summary>
+            Gets or sets Details
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Invoice.Base64File">
+            <summary>
+            Gets or sets Base64File
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Invoice.Organisation">
+            <summary>
+            Gets or sets Organisation
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.Invoice.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Define the database settings for this tabel
+            </summary>
+            <param name="modelBuilder">modelbuilder</param>
+        </member>
+        <member name="T:Monosoft.Service.OrganisationDB.Datalayer.MicroService">
+            <summary>
+            Microservice registration
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.MicroService.Id">
+            <summary>
+            Gets or sets Id
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.MicroService.Name">
+            <summary>
+            Gets or sets Name
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.MicroService.Version">
+            <summary>
+            Gets or sets Version
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.MicroService.Server">
+            <summary>
+            Gets or sets Server
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.MicroService.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Database definition
+            </summary>
+            <param name="modelBuilder">modelbuilder</param>
+        </member>
+        <member name="T:Monosoft.Service.OrganisationDB.Datalayer.Organisation">
+            <summary>
+            Organisation description.
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Organisation.Id">
+            <summary>
+            Gets or sets the Id
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Organisation.Name">
+            <summary>
+            Gets or sets the Name
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Organisation.ParentOrganisation">
+            <summary>
+            Gets or sets the ParentOrganisation
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Organisation.Cluster">
+            <summary>
+            Gets or sets the Cluster
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Organisation.Contracts">
+            <summary>
+            Gets or sets the Contracts
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Organisation.Invoices">
+            <summary>
+            Gets or sets the Invoices
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Organisation.SubOrganisations">
+            <summary>
+            Gets or sets the SubOrganisations
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Organisation.Metadata">
+            <summary>
+            Gets or sets the Metadata
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.Organisation.Create(Monosoft.Auth.DTO.Organisation,System.String)">
+            <summary>
+            Create a new organisation
+            </summary>
+            <param name="organisation">DTO containing the organisation definition</param>
+            <param name="scope">In which scope is the organisation created</param>
+            <returns>The created organisation</returns>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.Organisation.Update(Monosoft.Auth.DTO.Organisation,System.String)">
+            <summary>
+            Update an existing organisation
+            </summary>
+            <param name="organisation">DTO containing the organisation definition</param>
+            <param name="scope">In which scope is the organisation updated</param>
+            <returns>The updated organisation</returns>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.Organisation.Delete(System.Guid)">
+            <summary>
+            Delete an organisation
+            </summary>
+            <param name="id">id of the organisation to delete</param>
+            <returns>true if the organisation was deleted</returns>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.Organisation.ReadByCluster(System.Int32)">
+            <summary>
+            Get all organisations on a given cluster
+            </summary>
+            <param name="id">id of the cluster to find the organisations in</param>
+            <returns>list of organisations in the cluster</returns>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.Organisation.ReadById(System.Guid)">
+            <summary>
+            Get a specific organisation
+            </summary>
+            <param name="id">id of the organisation to get</param>
+            <returns>The found organisation</returns>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.Organisation.ConvertToDTO(System.String,Monosoft.Service.OrganisationDB.Datalayer.Organisation)">
+            <summary>
+            Convert an db organisation to a DTO
+            </summary>
+            <param name="scope">The scope in which the organisation is converted (only metadata from that scope will be included)</param>
+            <param name="dborg">the database representation of the organisation</param>
+            <returns>DTO representation of an organisation</returns>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.Organisation.ConvertToDTO(System.String)">
+            <summary>
+            Convert an db organisation to a DTO
+            </summary>
+            <param name="scope">The scope in which the organisation is converted (only metadata from that scope will be included)</param>
+            <returns>DTO representation of an organisation</returns>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.Organisation.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Defines the database structure for this tabel
+            </summary>
+            <param name="modelBuilder">modelbuilder</param>
+        </member>
+        <member name="T:Monosoft.Service.OrganisationDB.Datalayer.OrganisationMetadata">
+            <summary>
+            Metadata for an organisation
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.OrganisationMetadata.Id">
+            <summary>
+            Gets or sets Id
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.OrganisationMetadata.Organisation">
+            <summary>
+            Gets or sets Organisation
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.OrganisationMetadata.Key">
+            <summary>
+            Gets or sets Key
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.OrganisationMetadata.Value">
+            <summary>
+            Gets or sets Value
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.OrganisationMetadata.Scope">
+            <summary>
+            Gets or sets Scope
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.OrganisationMetadata.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Database definition of the tabel
+            </summary>
+            <param name="modelBuilder">modelbuilder</param>
+        </member>
+        <member name="T:Monosoft.Service.OrganisationDB.Datalayer.Server">
+            <summary>
+            Server registration
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Server.Id">
+            <summary>
+            Gets or sets Id
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Server.Name">
+            <summary>
+            Gets or sets Name
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Server.Cluster">
+            <summary>
+            Gets or sets Cluster
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Server.IP">
+            <summary>
+            Gets or sets IP
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.OrganisationDB.Datalayer.Server.MicroServices">
+            <summary>
+            Gets or sets Microservices
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.Datalayer.Server.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Database definition for server
+            </summary>
+            <param name="modelBuilder">modelbuilder</param>
+        </member>
+        <member name="T:Monosoft.Service.OrganisationDB.GlobalValues">
+            <summary>
+            Contains the global values for this program
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.GlobalValues.ServiceName">
+            <summary>
+            Global value for the services name
+            </summary>
+            <returns>The full servicename, including its unique id</returns>
+        </member>
+        <member name="F:Monosoft.Service.OrganisationDB.GlobalValues.Scope">
+            <summary>
+            Scope
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.OrganisationDB.GlobalValues.RouteClusterCreated">
+            <summary>
+            Route for cluster created
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.OrganisationDB.GlobalValues.RouteClusterUpdated">
+            <summary>
+            Route for cluster updated
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.OrganisationDB.GlobalValues.RouteClusterDeleted">
+            <summary>
+            Route for cluster delete
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.OrganisationDB.GlobalValues.RouteClusterRead">
+            <summary>
+            Route for cluster read
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.OrganisationDB.GlobalValues.RouteOrganisationCreated">
+            <summary>
+            Route for organisation created
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.OrganisationDB.GlobalValues.RouteOrganisationUpdated">
+            <summary>
+            Route for organisation update
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.OrganisationDB.GlobalValues.RouteOrganisationDeleted">
+            <summary>
+            Route for organisation delete
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.OrganisationDB.GlobalValues.RouteOrganisationRead">
+            <summary>
+            Route for organisation read
+            </summary>
+        </member>
+        <member name="T:Monosoft.Service.OrganisationDB.MessageHandlers.ClusterQueueHandler">
+            <summary>
+            Cluster messages handler
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.MessageHandlers.ClusterQueueHandler.HandleMessage(System.String[],Monosoft.Common.DTO.MessageWrapper)">
+            <summary>
+            Handles messages regardring cluster
+            </summary>
+            <param name="topicparts">topic parts</param>
+            <param name="wrapper">wrapper</param>
+            <returns>null</returns>
+        </member>
+        <member name="T:Monosoft.Service.OrganisationDB.MessageHandlers.OrganistationQueueHandler">
+            <summary>
+            Message handler for organisation messages
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.OrganisationDB.MessageHandlers.OrganistationQueueHandler.HandleMessage(System.String[],Monosoft.Common.DTO.MessageWrapper)">
+            <summary>
+            The message handler logic for organisation messages
+            </summary>
+            <param name="topicparts">topic parts</param>
+            <param name="wrapper">wrapper object</param>
+            <returns>resulting object or null</returns>
+        </member>
+        <member name="T:Monosoft.Service.OrganisationDB.Program">
+            <summary>
+            Program for the organisationDB microservice
+            </summary>
+        </member>
+        <member name="T:Monosoft.Service.UserDB.MessageHandlers.CallContext">
+            <summary>
+            The caller context, used for validating access rights
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.UserDB.MessageHandlers.CallContext.#ctor(System.Guid,Monosoft.Common.DTO.Token,System.DateTime)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Monosoft.Service.UserDB.MessageHandlers.CallContext"/> class.
+            </summary>
+            <param name="organisation">Organisation context</param>
+            <param name="token">The user context (represented as a token)</param>
+            <param name="issueDate">The date/time for which the access rights are cheked (the date the command was issued)</param>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.MessageHandlers.CallContext.UserId">
+            <summary>
+            Gets or sets UserId
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.MessageHandlers.CallContext.Scope">
+            <summary>
+            Gets or sets Scope
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.MessageHandlers.CallContext.CurrentUserToken">
+            <summary>
+            Gets or sets CurrentUserToken
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.MessageHandlers.CallContext.OrganisationId">
+            <summary>
+            Gets or sets OrganisationId
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.MessageHandlers.CallContext.IsSystemAdministrator">
+            <summary>
+            Gets or sets a value indicating whether IsSystemAdministrator is true
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.MessageHandlers.CallContext.IsKeyAccountManager">
+            <summary>
+            Gets or sets a value indicating whether IsKeyAccountManager is true
+            </summary>
+        </member>
+    </members>
+</doc>

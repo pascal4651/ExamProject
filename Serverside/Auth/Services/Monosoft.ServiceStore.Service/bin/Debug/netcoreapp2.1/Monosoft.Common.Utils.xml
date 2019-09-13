@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Monosoft.Common.Utils</name>
+    </assembly>
+    <members>
+        <member name="T:Monosoft.Common.Utils.ConfigHelper">
+            <summary>
+            A helper class for easy access to the config file
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.Utils.ConfigHelper.Config">
+            <summary>
+            Access to the configuration file
+            </summary>
+            <returns>The application configuration object</returns>
+        </member>
+        <member name="T:Monosoft.Common.Utils.ExceptionHelper">
+            <summary>
+            Exception helper, to log stacktrace and exception-stack
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.Utils.ExceptionHelper.GetExceptionAsReportText(System.Exception)">
+            <summary>
+            Gets exception as string
+            </summary>
+            <param name="ex">Exception to tranform into text</param>
+            <returns>exception string</returns>
+        </member>
+        <member name="T:Monosoft.Common.Utils.HashHelper">
+            <summary>
+            Helper for hashing
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.Utils.HashHelper.CalculateMD5Hash(System.String)">
+            <summary>
+            Calculate MD5 hash from text
+            </summary>
+            <param name="input">Text to hash</param>
+            <returns>MD5 hash string</returns>
+        </member>
+        <member name="T:Monosoft.Common.Utils.NetworkHelper">
+            <summary>
+            Network helper
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.Utils.NetworkHelper.GetLocalIPAddress">
+            <summary>
+            Gets the local IP address
+            </summary>
+            <returns>IP address</returns>
+        </member>
+        <member name="M:Monosoft.Common.Utils.NetworkHelper.HasNetwork">
+            <summary>
+            Is network available
+            </summary>
+            <returns>true if network is present</returns>
+        </member>
+    </members>
+</doc>

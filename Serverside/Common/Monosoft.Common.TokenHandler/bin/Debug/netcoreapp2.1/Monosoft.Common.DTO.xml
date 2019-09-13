@@ -1,0 +1,659 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Monosoft.Common.DTO</name>
+    </assembly>
+    <members>
+        <member name="T:Monosoft.Common.DTO.DiagnosticsSettings">
+            <summary>
+            Diagnostics settings definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.DiagnosticsSettings.Servicename">
+            <summary>
+            Gets or sets servicename
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.DiagnosticsSettings.RefreshRateInSeconds">
+            <summary>
+            Gets or sets refresh rate in seconds
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.DTO.HeartBeat">
+            <summary>
+            Diagnostics information about the program and the envoriment it is running within
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.Servicename">
+            <summary>
+            Gets or sets the servicename/program name
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.ServiceVersion">
+            <summary>
+            Gets or sets the version of the service
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.Servername">
+            <summary>
+            Gets or sets the servername
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.Timestamp">
+            <summary>
+            Gets or sets the timestamp for when the information was gathered
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.Disks">
+            <summary>
+            Gets or sets information about the hard-drives
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.Cpu">
+            <summary>
+            Gets or sets CPU usage
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.Ram">
+            <summary>
+            Gets or sets RAM usage
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.Uptime">
+            <summary>
+            Gets or sets how long the program have been running
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.DTO.HeartBeat.CollectData(System.String,System.String)">
+            <summary>
+            Gather all informations about the server and the program
+            </summary>
+            <param name="servicename">Name of the service from where this is collected</param>
+            <param name="programVersion">Versionname of the program/service</param>
+        </member>
+        <member name="T:Monosoft.Common.DTO.HeartBeat.DiskInfo">
+            <summary>
+            Provides information about a harddrive
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.DiskInfo.Drivename">
+            <summary>
+            Gets or sets the name of the drive
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.DiskInfo.Totalbytes">
+            <summary>
+            Gets or sets number of total bytes available on the disk
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.DiskInfo.Usedbytes">
+            <summary>
+            Gets or sets number of used bytes on the disk
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.DiskInfo.Freebytes">
+            <summary>
+            Gets or sets number of free bytes on the disk
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.DiskInfo.PctFree">
+            <summary>
+            Gets or sets the free space in %
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.DTO.HeartBeat.DiskInfo.CollectData">
+            <summary>
+            Collect data about all harddrives on the system
+            </summary>
+            <returns>List of harddrives</returns>
+        </member>
+        <member name="T:Monosoft.Common.DTO.HeartBeat.CpuInfo">
+            <summary>
+            Information about the CPU
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.CpuInfo.TotalProcessorTime">
+            <summary>
+            Gets or sets the amount of CPU time this program have used
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.CpuInfo.PctUsed">
+            <summary>
+            Gets or sets the amount of CPU time in % that this program have used
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.DTO.HeartBeat.CpuInfo.CollectData(System.TimeSpan)">
+            <summary>
+            Collect information about the cpu
+            </summary>
+            <param name="runningTime">How long the program have been running</param>
+            <returns>cpu information</returns>
+        </member>
+        <member name="T:Monosoft.Common.DTO.HeartBeat.RamInfo">
+            <summary>
+            Infomation about the RAM installed on the machine
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.RamInfo.PagedMemorySize">
+            <summary>
+            Gets or sets PagedMemorySize
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.RamInfo.PagedSystemMemorySize">
+            <summary>
+            Gets or sets PagedSystemMemorySize
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.RamInfo.PrivateMemorySize">
+            <summary>
+            Gets or sets PrivateMemorySize
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.HeartBeat.RamInfo.PeakPagedMemorySize">
+            <summary>
+            Gets or sets PeakPagedMemorySize
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.DTO.HeartBeat.RamInfo.CollectData">
+            <summary>
+            Collect information about RAM usage
+            </summary>
+            <returns>ram information</returns>
+        </member>
+        <member name="T:Monosoft.Common.DTO.GuidIdDTO">
+            <summary>
+            Generic DTO for GUID definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.GuidIdDTO.Id">
+            <summary>
+            Gets or sets Id
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.DTO.GuidIdsDTO">
+            <summary>
+            Generic DTO for list of GUID definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.GuidIdsDTO.Id">
+            <summary>
+            Gets or sets Id
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.DTO.IntIdDTO">
+            <summary>
+            Generic DTO for integer definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.IntIdDTO.Id">
+            <summary>
+            Gets or sets Usergroupid
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.DTO.Event">
+            <summary>
+            Event definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.Event.ServiceName">
+            <summary>
+            Gets or sets servicename
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.Event.ServiceVersion">
+            <summary>
+            Gets or sets servicename
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.Event.ServerName">
+            <summary>
+            Gets or sets Servername
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.Event.TimeStamp">
+            <summary>
+            Gets or sets Timestamp
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.Event.EventTitel">
+            <summary>
+            Gets or sets Eventtitel
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.Event.EventMessage">
+            <summary>
+            Gets or sets Eventmessage
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.Event.Severity">
+            <summary>
+            Gets or sets Severity
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.Event.Metadata">
+            <summary>
+            Gets or sets Metadata
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.DTO.EventDTO">
+            <summary>
+            Event DTO definition
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.DTO.EventDTO.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Monosoft.Common.DTO.EventDTO"/> class.
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.DTO.EventDTO.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Monosoft.Common.DTO.EventDTO"/> class.
+            </summary>
+            <param name="json">event data as json</param>
+            <param name="clientid">caller clientid</param>
+            <param name="messageid">caller messageid</param>
+        </member>
+        <member name="M:Monosoft.Common.DTO.EventDTO.#ctor(System.Object,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Monosoft.Common.DTO.EventDTO"/> class.
+            </summary>
+            <param name="obj">event data</param>
+            <param name="clientid">caller clientid</param>
+            <param name="messageid">caller messageid</param>
+        </member>
+        <member name="P:Monosoft.Common.DTO.EventDTO.ClientId">
+            <summary>
+            Gets or sets ClientId
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.EventDTO.MessageId">
+            <summary>
+            Gets or sets MessageId
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.EventDTO.Data">
+            <summary>
+            Gets or sets Data
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.DTO.EventDTO.Json">
+            <summary>
+            Get event data as json
+            </summary>
+            <returns>json string</returns>
+        </member>
+        <member name="T:Monosoft.Common.DTO.LocalizedString">
+            <summary>
+            Localized string definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.LocalizedString.Lang">
+            <summary>
+            Gets or sets Lang
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.LocalizedString.Text">
+            <summary>
+            Gets or sets Text
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.DTO.MessageWrapper">
+            <summary>
+            Message wrapper definition
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.DTO.MessageWrapper.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Monosoft.Common.DTO.MessageWrapper"/> class.
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.DTO.MessageWrapper.#ctor(System.DateTime,System.Guid,System.String,System.String,System.String,System.String,System.Guid,Monosoft.Common.DTO.Tracing)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Monosoft.Common.DTO.MessageWrapper"/> class.
+            </summary>
+            <param name="issuedDate">message issuedate</param>
+            <param name="userContext">user that issued the message</param>
+            <param name="scope">scope of the message (name of calling program)</param>
+            <param name="clientid">client id, for returning messages</param>
+            <param name="messageid">message id, defined by client</param>
+            <param name="callerIp">IP of the caller</param>
+            <param name="orgContext">Organisation context</param>
+            <param name="tracing">tracing level</param>
+        </member>
+        <member name="M:Monosoft.Common.DTO.MessageWrapper.#ctor(System.DateTime,System.Guid,System.String,System.String,System.String,System.String,System.String,System.Guid,Monosoft.Common.DTO.Tracing)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Monosoft.Common.DTO.MessageWrapper"/> class.
+            </summary>
+            <param name="issuedDate">message issuedate</param>
+            <param name="userContext">user that issued the message</param>
+            <param name="scope">scope of the message (name of calling program)</param>
+            <param name="clientid">client id, for returning messages</param>
+            <param name="messageid">message id, defined by client</param>
+            <param name="callerIp">IP of the caller</param>
+            <param name="json">json</param>
+            <param name="orgContext">Organisation context</param>
+            <param name="tracing">tracing level</param>
+        </member>
+        <member name="P:Monosoft.Common.DTO.MessageWrapper.MessageData">
+            <summary>
+            Gets or sets MessageData
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.MessageWrapper.Tracing">
+            <summary>
+            Gets or sets Tracing
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.MessageWrapper.UserContextToken">
+            <summary>
+            Gets or sets UserContextToken
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.MessageWrapper.OrgContext">
+            <summary>
+            Gets or sets OrgContext
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.MessageWrapper.Scope">
+            <summary>
+            Gets or sets Scope
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.MessageWrapper.Clientid">
+            <summary>
+            Gets or sets Clientid
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.MessageWrapper.Messageid">
+            <summary>
+            Gets or sets Messageid
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.MessageWrapper.CallerIp">
+            <summary>
+            Gets or sets CallerIp
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.MessageWrapper.IssuedDate">
+            <summary>
+            Gets or sets IssuedDate
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.DTO.MessageWrapperHelper`1">
+            <summary>
+            Message wrapper helper, for encoding/decoding data for transport
+            </summary>
+            <typeparam name="T">Type of the data</typeparam>
+        </member>
+        <member name="M:Monosoft.Common.DTO.MessageWrapperHelper`1.GetData(Monosoft.Common.DTO.MessageWrapper)">
+            <summary>
+            Get decoded data from the message wrapper
+            </summary>
+            <param name="wrapper">message wrapper</param>
+            <returns>decoded data</returns>
+        </member>
+        <member name="M:Monosoft.Common.DTO.MessageWrapperHelper`1.SetData(Monosoft.Common.DTO.MessageWrapper,`0)">
+            <summary>
+            Sets, and encode data into the message wrapper
+            </summary>
+            <param name="wrapper">message wrapper</param>
+            <param name="data">encoding data</param>
+        </member>
+        <member name="T:Monosoft.Common.DTO.ReturnMessageWrapper">
+            <summary>
+            Wrapper for return messages
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.DTO.ReturnMessageWrapper.#ctor(System.String,System.String,System.Byte[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Monosoft.Common.DTO.ReturnMessageWrapper"/> class.
+            </summary>
+            <param name="responseToClientid">Which client is to receive the message</param>
+            <param name="responseToMessageid">What is the clients message id</param>
+            <param name="data">the return object as json (utf8 byte array)</param>
+        </member>
+        <member name="P:Monosoft.Common.DTO.ReturnMessageWrapper.ResponseToClientid">
+            <summary>
+            Gets or sets ResponseToClientid
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.ReturnMessageWrapper.ResponseToMessageid">
+            <summary>
+            Gets or sets ResponseToMessageid
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.ReturnMessageWrapper.Message">
+            <summary>
+            Gets or sets Message
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.ReturnMessageWrapper.Data">
+            <summary>
+            Gets or sets data (json serialized object, which have been converted to utf8 byte array)
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.DTO.Severity">
+            <summary>
+            Enum for severity
+            </summary>
+        </member>
+        <member name="F:Monosoft.Common.DTO.Severity.Information">
+            <summary>
+            Information
+            </summary>
+        </member>
+        <member name="F:Monosoft.Common.DTO.Severity.Debug">
+            <summary>
+            Debug
+            </summary>
+        </member>
+        <member name="F:Monosoft.Common.DTO.Severity.Critical">
+            <summary>
+            Critical
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.DTO.Trace">
+            <summary>
+            Object used to transfer trace information
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.DTO.Trace.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Monosoft.Common.DTO.Trace"/> class.
+            Default constructor used by the deserialiser
+            </summary>
+        </member>
+        <member name="M:Monosoft.Common.DTO.Trace.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Monosoft.Common.DTO.Trace"/> class.
+            </summary>
+            <param name="service">Name of the microservice that created this trace</param>
+            <param name="topic">A brief description of the trace, would normally be the message-route</param>
+        </member>
+        <member name="P:Monosoft.Common.DTO.Trace.Ip">
+            <summary>
+            Gets or sets the Ip adress
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.Trace.Service">
+            <summary>
+            Gets or sets name of the service
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.Trace.Topic">
+            <summary>
+            Gets or sets the topic
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.Trace.InternalTrace">
+            <summary>
+            Gets or sets the traceinformation
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.DTO.Tracing">
+            <summary>
+            Tracing description
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.DTO.Tracing.Level">
+            <summary>
+            Tracing level
+            </summary>
+        </member>
+        <member name="F:Monosoft.Common.DTO.Tracing.Level.None">
+            <summary>
+            Dont trace anything
+            </summary>
+        </member>
+        <member name="F:Monosoft.Common.DTO.Tracing.Level.Network">
+            <summary>
+            Trace only the network/route information
+            </summary>
+        </member>
+        <member name="F:Monosoft.Common.DTO.Tracing.Level.All">
+            <summary>
+            Trace everything
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.Tracing.Tracelevel">
+            <summary>
+            Gets or sets trace level
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.Tracing.Trace">
+            <summary>
+            Gets or sets trace
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.DTO.MetaData">
+            <summary>
+            MetaData description
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.MetaData.Key">
+            <summary>
+            Gets or sets Key
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.MetaData.Value">
+            <summary>
+            Gets or sets Value
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.MetaData.Scope">
+            <summary>
+            Gets or sets Scope
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.DTO.MetaDataDefinition">
+            <summary>
+            Metadata definition description
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.MetaDataDefinition.Key">
+            <summary>
+            Gets or sets unique key for the scope
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.MetaDataDefinition.Description">
+            <summary>
+            Gets or sets short DEVELOPER orientated description
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.MetaDataDefinition.Scope">
+            <summary>
+            Gets or sets scope defines which program uses/defines the metadata
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.MetaDataDefinition.Datacontext">
+            <summary>
+            Gets or sets datacontext defines where this metadata is used (i.e. which metadatalist it should be saved to)
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.DTO.MetaDataDefinitions">
+            <summary>
+            Metadata definitions description
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.MetaDataDefinitions.Definitions">
+            <summary>
+            Gets or sets Definitions
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.DTO.Success">
+            <summary>
+            Success definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.Success.Succeeded">
+            <summary>
+            Gets or sets Succeeded
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.DTO.Token">
+            <summary>
+            Token definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.Token.Tokenid">
+            <summary>
+            Gets or sets tokenid
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.Token.Scope">
+            <summary>
+            Gets or sets scope
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.DTO.TokenData">
+            <summary>
+            TokenData description
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.TokenData.Scope">
+            <summary>
+            Gets or sets Scope
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.TokenData.Tokenid">
+            <summary>
+            Gets or sets Tokenid
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.TokenData.Userid">
+            <summary>
+            Gets or sets Userid
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.TokenData.ValidUntil">
+            <summary>
+            Gets or sets ValidUntil
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.TokenData.Claims">
+            <summary>
+            Gets or sets Claims
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.TokenData.OrganisationClaims">
+            <summary>
+            Gets or sets OrganisationClaims
+            </summary>
+        </member>
+        <member name="T:Monosoft.Common.DTO.InvalidateUserData">
+            <summary>
+            InvalidateUserData description
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.InvalidateUserData.Userids">
+            <summary>
+            Gets or sets Userids
+            </summary>
+        </member>
+        <member name="P:Monosoft.Common.DTO.InvalidateUserData.ValidUntil">
+            <summary>
+            Gets or sets ValidUntil
+            </summary>
+        </member>
+    </members>
+</doc>

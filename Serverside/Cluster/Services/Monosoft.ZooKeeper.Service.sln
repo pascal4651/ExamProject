@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monosoft.ZooKeeper.Service", "Monosoft.ZooKeeper.Service\Monosoft.ZooKeeper.Service.csproj", "{EBEB6BD6-3E7F-4366-8C60-94920863F125}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monosoft.Common.DTO", "..\..\Common\Monosoft.Common.DTO\Monosoft.Common.DTO.csproj", "{C86C82B4-3715-46C0-8871-6CA0BBCACA81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monosoft.Auth.DTO", "..\..\Auth\Monosoft.Auth.DTO\Monosoft.Auth.DTO.csproj", "{02CD857A-0D4F-4575-AF98-91564D20EA30}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monosoft.Common.Utils", "..\..\Common\Monosoft.Common.Utils\Monosoft.Common.Utils.csproj", "{8E991D35-2431-44AC-A725-8426D8F36F4E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monosoft.Common.TokenHandler", "..\..\Common\Monosoft.Common.TokenHandler\Monosoft.Common.TokenHandler.csproj", "{9E20B9A3-73C6-446B-B6CE-44CDAC21D1DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monosoft.Common.MessageQueue", "..\..\Common\Monosoft.Common.MessageQueue\Monosoft.Common.MessageQueue.csproj", "{526B133A-6B83-46CD-92AB-7E85413B9B18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBEB6BD6-3E7F-4366-8C60-94920863F125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBEB6BD6-3E7F-4366-8C60-94920863F125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBEB6BD6-3E7F-4366-8C60-94920863F125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBEB6BD6-3E7F-4366-8C60-94920863F125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C86C82B4-3715-46C0-8871-6CA0BBCACA81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C86C82B4-3715-46C0-8871-6CA0BBCACA81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C86C82B4-3715-46C0-8871-6CA0BBCACA81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C86C82B4-3715-46C0-8871-6CA0BBCACA81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02CD857A-0D4F-4575-AF98-91564D20EA30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02CD857A-0D4F-4575-AF98-91564D20EA30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02CD857A-0D4F-4575-AF98-91564D20EA30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02CD857A-0D4F-4575-AF98-91564D20EA30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E991D35-2431-44AC-A725-8426D8F36F4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E991D35-2431-44AC-A725-8426D8F36F4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E991D35-2431-44AC-A725-8426D8F36F4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E991D35-2431-44AC-A725-8426D8F36F4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E20B9A3-73C6-446B-B6CE-44CDAC21D1DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E20B9A3-73C6-446B-B6CE-44CDAC21D1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E20B9A3-73C6-446B-B6CE-44CDAC21D1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E20B9A3-73C6-446B-B6CE-44CDAC21D1DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{526B133A-6B83-46CD-92AB-7E85413B9B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{526B133A-6B83-46CD-92AB-7E85413B9B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{526B133A-6B83-46CD-92AB-7E85413B9B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{526B133A-6B83-46CD-92AB-7E85413B9B18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8493FFCE-23B5-4092-B691-F7B4C72632CF}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Monosoft.Service.UserDB</name>
+    </assembly>
+    <members>
+        <member name="T:Monosoft.Service.UserDB.ClaimDefinitions">
+            <summary>
+            Contains the claims used by UserDB to handle security levels
+            </summary>
+        </member>
+        <member name="T:Monosoft.Service.UserDB.Datalayer.DataContext">
+            <summary>
+            Datacontext for the userdatabase
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.DataContext.Instance">
+            <summary>
+            Gets singleton for datacontext
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.DataContext.Tokens">
+            <summary>
+            Gets or sets gets all tokens
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.DataContext.Users">
+            <summary>
+            Gets or sets gets all users
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.DataContext.UsersInUserGroup">
+            <summary>
+            Gets or sets gets all usersinusergroup
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.DataContext.UserMetadatas">
+            <summary>
+            Gets or sets gets all usermetadatas
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.DataContext.UserGroups">
+            <summary>
+            Gets or sets gets all usergroups
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.DataContext.UserGroup_Metadatas">
+            <summary>
+            Gets or sets gets all usergroup metadata
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.DataContext.UserInOrganisations">
+            <summary>
+            Gets or sets gets all user in organisations
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.DataContext.UserInOrg_OrgClaimsMetadatas">
+            <summary>
+            Gets or sets gets all userinorg orgclaimsmetadata
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.DataContext.UserInOrg_UserClaimsMetadatas">
+            <summary>
+            Gets or sets gets all userinorg userclaimsmetadata
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.DataContext.UserLoginLogs">
+            <summary>
+            Gets or sets gets all user login logs
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.UserDB.Datalayer.DataContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            initialise the database from config file
+            </summary>
+            <param name="optionsBuilder">optoinsbuilder</param>
+        </member>
+        <member name="M:Monosoft.Service.UserDB.Datalayer.DataContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            creates the database model in the database (code-first)
+            </summary>
+            <param name="modelBuilder">modelbuilder</param>
+        </member>
+        <member name="T:Monosoft.Service.UserDB.Datalayer.Token">
+            <summary>
+            Login tokens, describes a login-token for security validation
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.Token.Id">
+            <summary>
+            Gets or sets Unique token id
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.Token.Scope">
+            <summary>
+            Gets or sets the tokens scope
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.Token.User">
+            <summary>
+            Gets or sets the user assosiated with the token
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.Token.ValidUntil">
+            <summary>
+            Gets or sets how long the token is valid
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.UserDB.Datalayer.Token.Login(Monosoft.Service.UserDB.Datalayer.User,System.String)">
+            <summary>
+            Method for login, which creates a token
+            </summary>
+            <param name="usr">the user that is to be logged in</param>
+            <param name="scope">which scope the login covers</param>
+            <returns>token info</returns>
+        </member>
+        <member name="M:Monosoft.Service.UserDB.Datalayer.Token.Login(Monosoft.Auth.DTO.Login,System.String)">
+            <summary>
+            Method for login, which creates a token
+            </summary>
+            <param name="login">the login info that is used for the login</param>
+            <param name="ip">callers ip adress</param>
+            <returns>token info</returns>
+        </member>
+        <member name="M:Monosoft.Service.UserDB.Datalayer.Token.Verify(Monosoft.Auth.DTO.Token)">
+            <summary>
+            Returns tokendata for a given token (invalid token without claims if data is not found)
+            </summary>
+            <param name="token">The token to verify</param>
+            <returns>Tokendata</returns>
+        </member>
+        <member name="M:Monosoft.Service.UserDB.Datalayer.Token.Logout(Monosoft.Auth.DTO.Token)">
+            <summary>
+            Invalidates the token, by changing its validuntil date to "now"
+            </summary>
+            <param name="token">The login token that is to be invalidated</param>
+            <returns>The new/invalidated tokendata</returns>
+        </member>
+        <member name="M:Monosoft.Service.UserDB.Datalayer.Token.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Setup the database model
+            </summary>
+            <param name="modelBuilder">modelbuilder</param>
+        </member>
+        <member name="M:Monosoft.Service.UserDB.Datalayer.Token.ConvertToTokenData(System.String,Monosoft.Service.UserDB.Datalayer.User)">
+            <summary>
+            Converts the current database token to tokendata (dto)
+            </summary>
+            <param name="scope">the scope which the tokendata should reflect</param>
+            <param name="usr">the user that the token is assosiated with</param>
+            <returns>tokendata</returns>
+        </member>
+        <member name="T:Monosoft.Service.UserDB.Datalayer.User">
+            <summary>
+            Informations about a given user
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.UserDB.Datalayer.User.ReadUser(Monosoft.Service.UserDB.MessageHandlers.CallContext)">
+            <summary>
+            Gets detailed user data, can only be called by the user himself
+            </summary>
+            <param name="cc">CallContext is provided to check verify that access can be granted</param>
+            <returns>Current user, based on CallContext</returns>
+        </member>
+        <member name="M:Monosoft.Service.UserDB.Datalayer.User.ReadUsers(Monosoft.Service.UserDB.MessageHandlers.CallContext)">
+            <summary>
+            Get detailed information on users in the organisationContext
+            </summary>
+            <param name="cc">CallContext for validating if user is administrator</param>
+            <returns>List of all users on the given organisation (callcontext)</returns>
+        </member>
+        <member name="T:Monosoft.Service.UserDB.Datalayer.UserMetadata">
+            <summary>
+            Stores metadata about a user
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.UserMetadata.Id">
+            <summary>
+            Gets or sets the Id
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.UserMetadata.User">
+            <summary>
+            Gets or sets the user
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.UserMetadata.Scope">
+            <summary>
+            Gets or sets the Scope
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.UserMetadata.Key">
+            <summary>
+            Gets or sets the Key
+            </summary>
+        </member>
+        <member name="P:Monosoft.Service.UserDB.Datalayer.UserMetadata.Value">
+            <summary>
+            Gets or sets the Value
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.UserDB.Datalayer.UserMetadata.Convert2DTO">
+            <summary>
+            Convert the database usermetadata to DTO metadata
+            </summary>
+            <returns>User metadata as MetaData</returns>
+        </member>
+        <member name="T:Monosoft.Service.UserDB.GlobalValues">
+            <summary>
+            Contains the global values for this program
+            </summary>
+        </member>
+        <member name="T:Monosoft.Service.UserDB.MemoryCache">
+            <summary>
+            Contains static lists for in-memory representation of user and token data in order to reduce load on the database
+            </summary>
+        </member>
+        <member name="T:Monosoft.Service.UserDB.MessageHandlers.UserQueueHandler">
+            <summary>
+            Message handler for "user" messages (i.e. user.#)
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.UserDB.MessageHandlers.UserQueueHandler.HandleMessage(System.String[],Monosoft.Common.DTO.MessageWrapper)">
+            <summary>
+            Handle an incomming message
+            </summary>
+            <param name="topicparts">The topic/route as a list of strings</param>
+            <param name="wrapper">Message wrapper</param>
+            <returns>NULL</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Monosoft.Service.UserDB.Program" -->
+    </members>
+</doc>

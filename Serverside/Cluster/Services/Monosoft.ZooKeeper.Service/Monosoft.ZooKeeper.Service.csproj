@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Auth\Monosoft.Auth.DTO\Monosoft.Auth.DTO.csproj" />
+    <ProjectReference Include="..\..\..\Common\Monosoft.Common.DTO\Monosoft.Common.DTO.csproj" />
+    <ProjectReference Include="..\..\..\Common\Monosoft.Common.MessageQueue\Monosoft.Common.MessageQueue.csproj" />
+    <ProjectReference Include="..\..\..\Common\Monosoft.Common.TokenHandler\Monosoft.Common.TokenHandler.csproj" />
+    <ProjectReference Include="..\..\..\Common\Monosoft.Common.Utils\Monosoft.Common.Utils.csproj" />
+  </ItemGroup>
+
+</Project>

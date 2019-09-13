@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Monosoft.Token.Service</name>
+    </assembly>
+    <members>
+        <member name="T:Monosoft.Service.TokenDB.GlobalValues">
+            <summary>
+            Contains the global values for this program
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.TokenDB.GlobalValues.Scope">
+            <summary>
+            Scope
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.TokenDB.GlobalValues.RouteServiceMetadata">
+            <summary>
+            Route information for metadata
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.TokenDB.GlobalValues.RouteTokenLogin">
+            <summary>
+            Route information for login
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.TokenDB.GlobalValues.RouteTokenLogout">
+            <summary>
+            Route information for logout
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.TokenDB.GlobalValues.RouteTokenInvalidateToken">
+            <summary>
+            Route information for invalidate
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.TokenDB.GlobalValues.RouteTokenInvalidateUser">
+            <summary>
+            Route information for invalidate
+            </summary>
+        </member>
+        <member name="F:Monosoft.Service.TokenDB.GlobalValues.RouteTokenVerify">
+            <summary>
+            Route information for verify
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.TokenDB.GlobalValues.ServiceName">
+            <summary>
+            Global value for the services name
+            </summary>
+            <returns>The full servicename, including its unique id</returns>
+        </member>
+        <member name="T:Monosoft.Service.TokenDB.MessageHandlers.ServiceQueueHandler">
+            <summary>
+            The handler for services messages
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.TokenDB.MessageHandlers.ServiceQueueHandler.HandleMessage(System.String[],Monosoft.Common.DTO.MessageWrapper)">
+            <summary>
+            Handle an incomming message routed for services
+            </summary>
+            <param name="topicparts">list of topics</param>
+            <param name="wrapper">the message wrapper</param>
+            <returns>null</returns>
+        </member>
+        <member name="T:Monosoft.Service.TokenDB.MessageHandlers.TokenQueueHandler">
+            <summary>
+            Handle incomming token requests
+            </summary>
+        </member>
+        <member name="M:Monosoft.Service.TokenDB.MessageHandlers.TokenQueueHandler.HandleMessage(System.String[],Monosoft.Common.DTO.MessageWrapper)">
+            <summary>
+            Handle incomming token requests
+            </summary>
+            <param name="topicparts">list of topics</param>
+            <param name="wrapper">messagewrapper</param>
+            <returns>tokendata as byte array - but only on verify, otherwise null is returned</returns>
+        </member>
+        <member name="T:Monosoft.Service.TokenDB.Program">
+            <summary>
+            TokenDB contains logic for handling security (Users and usergroups through tokens) through rabbitMQ
+            </summary>
+        </member>
+    </members>
+</doc>

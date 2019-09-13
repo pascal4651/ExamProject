@@ -1,0 +1,11 @@
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Service.Scheduling\bin\Debug\netcoreapp2.1\Monosoft.Service.Scheduling.deps.json
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Service.Scheduling\bin\Debug\netcoreapp2.1\Monosoft.Service.Scheduling.runtimeconfig.json
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Service.Scheduling\bin\Debug\netcoreapp2.1\Monosoft.Service.Scheduling.runtimeconfig.dev.json
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Service.Scheduling\bin\Debug\netcoreapp2.1\Monosoft.Service.Scheduling.dll
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Service.Scheduling\bin\Debug\netcoreapp2.1\Monosoft.Service.Scheduling.pdb
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Service.Scheduling\obj\Debug\netcoreapp2.1\Monosoft.Service.Scheduling.csprojAssemblyReference.cache
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Service.Scheduling\obj\Debug\netcoreapp2.1\Monosoft.Service.Scheduling.csproj.CoreCompileInputs.cache
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Service.Scheduling\obj\Debug\netcoreapp2.1\Monosoft.Service.Scheduling.AssemblyInfoInputs.cache
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Service.Scheduling\obj\Debug\netcoreapp2.1\Monosoft.Service.Scheduling.AssemblyInfo.cs
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Service.Scheduling\obj\Debug\netcoreapp2.1\Monosoft.Service.Scheduling.dll
+C:\Users\jimmy.DESKTOP-ILN6RHQ\Desktop\The Ranch\Serverside\Auth\Monosoft.Service.Scheduling\obj\Debug\netcoreapp2.1\Monosoft.Service.Scheduling.pdb

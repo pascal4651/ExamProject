@@ -1,0 +1,450 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Monosoft.Auth.DTO</name>
+    </assembly>
+    <members>
+        <member name="T:Monosoft.Auth.DTO.Cluster">
+            <summary>
+            Cluster definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Cluster.ClusterId">
+            <summary>
+            Gets or sets ClusterId
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Cluster.Name">
+            <summary>
+            Gets or sets Name
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Cluster.Endpoints">
+            <summary>
+            Gets or sets Endpoints
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Cluster.Servers">
+            <summary>
+            Gets or sets Servers
+            </summary>
+        </member>
+        <member name="T:Monosoft.Auth.DTO.ClusterEndpoint">
+            <summary>
+            Defines a cluster endpoint (i.e. where to access the cluster)
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.ClusterEndpoint.IP">
+            <summary>
+            Gets or sets IP
+            </summary>
+        </member>
+        <member name="T:Monosoft.Auth.DTO.Clusters">
+            <summary>
+            DTO for handling list of clusters
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Clusters.Cluster">
+            <summary>
+            Gets or sets clusterlist
+            </summary>
+        </member>
+        <member name="T:Monosoft.Auth.DTO.Server">
+            <summary>
+            The serverclass describes information about a server for remote monitoring and management
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Server.Id">
+            <summary>
+            Gets or sets the unique id of the server
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Server.Name">
+            <summary>
+            Gets or sets the name
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Server.IP">
+            <summary>
+            Gets or sets the IP addr
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Server.Services">
+            <summary>
+            Gets or sets a list of services running on the server
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Service.Name">
+            <summary>
+            Gets or sets Name
+            </summary>
+        </member>
+        <member name="T:Monosoft.Auth.DTO.Contract">
+            <summary>
+            Contract definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Contract.ContractNo">
+            <summary>
+            Gets or sets ContractNo
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Contract.Title">
+            <summary>
+            Gets or sets Title
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Contract.Description">
+            <summary>
+            Gets or sets Description
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Contract.Base64File">
+            <summary>
+            Gets or sets Base64File
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Contract.Currency">
+            <summary>
+            Gets or sets Currency
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Contract.Payout">
+            <summary>
+            Gets or sets Payout
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Contract.OngoingPayment">
+            <summary>
+            Gets or sets OngoingPayment
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Contract.Interval">
+            <summary>
+            Gets or sets Interval
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Contract.NextInvoicedate">
+            <summary>
+            Gets or sets NextInvoicedate
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Contract.IsActive">
+            <summary>
+            Gets or sets IsActive
+            </summary>
+        </member>
+        <member name="T:Monosoft.Auth.DTO.Invoice">
+            <summary>
+            Invoice definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Invoice.Invoiceno">
+            <summary>
+            Gets or sets Invoiceno
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Invoice.Amout">
+            <summary>
+            Gets or sets Amout
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Invoice.Currency">
+            <summary>
+            Gets or sets Currency
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Invoice.Status">
+            <summary>
+            Gets or sets Status
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Invoice.DueDate">
+            <summary>
+            Gets or sets DueDate
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Invoice.Invoicedate">
+            <summary>
+            Gets or sets Invoicedate
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Invoice.Titel">
+            <summary>
+            Gets or sets Titel
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Invoice.Details">
+            <summary>
+            Gets or sets Details
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Invoice.Base64File">
+            <summary>
+            Gets or sets Base64File
+            </summary>
+        </member>
+        <member name="T:Monosoft.Auth.DTO.InvoiceStatus">
+            <summary>
+            Enumeration for invoice status
+            </summary>
+        </member>
+        <member name="F:Monosoft.Auth.DTO.InvoiceStatus.Created">
+            <summary>
+            Indicates that an invoice have been created - but not yet paid
+            </summary>
+        </member>
+        <member name="F:Monosoft.Auth.DTO.InvoiceStatus.Cancled">
+            <summary>
+            Indicates that an invoice have been cancled
+            </summary>
+        </member>
+        <member name="F:Monosoft.Auth.DTO.InvoiceStatus.Paied">
+            <summary>
+            Indicated that an invoice have be paied
+            </summary>
+        </member>
+        <member name="T:Monosoft.Auth.DTO.Organisation">
+            <summary>
+            Organisation definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Organisation.Id">
+            <summary>
+            Gets or sets Id
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Organisation.ParentOrganisation">
+            <summary>
+            Gets or sets ParentOrganisation
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Organisation.Name">
+            <summary>
+            Gets or sets Name
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Organisation.Metadata">
+            <summary>
+            Gets or sets Metadata
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Organisation.Contracts">
+            <summary>
+            Gets or sets Contracts
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Organisation.Invoices">
+            <summary>
+            Gets or sets Invoices
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Organisation.Cluster">
+            <summary>
+            Gets or sets ClusterId
+            </summary>
+        </member>
+        <member name="T:Monosoft.Auth.DTO.OrganisationClaims">
+            <summary>
+            Organisation claims definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.OrganisationClaims.Id">
+            <summary>
+            Gets or sets Id
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.OrganisationClaims.OrgClaims">
+            <summary>
+            Gets or sets OrgClaims
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.OrganisationClaims.UserClaims">
+            <summary>
+            Gets or sets UserClaims
+            </summary>
+        </member>
+        <member name="T:Monosoft.Auth.DTO.Organisations">
+            <summary>
+            DTO for returning a list of organisations
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Organisations.Organisation">
+            <summary>
+            Gets or sets a list of organisations
+            </summary>
+        </member>
+        <member name="T:Monosoft.Auth.DTO.Login">
+            <summary>
+            Login definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Login.Username">
+            <summary>
+            Gets or sets Username
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.Login.Password">
+            <summary>
+            Gets or sets password
+            </summary>
+        </member>
+        <member name="T:Monosoft.Auth.DTO.SupportFromOrg">
+            <summary>
+            Support from org definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.SupportFromOrg.Id">
+            <summary>
+            Gets or sets Id
+            </summary>
+        </member>
+        <member name="T:Monosoft.Auth.DTO.User">
+            <summary>
+            User definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.User.Userid">
+            <summary>
+            Gets or sets Userid
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.User.Username">
+            <summary>
+            Gets or sets Username
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.User.Email">
+            <summary>
+            Gets or sets Email
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.User.Mobile">
+            <summary>
+            Gets or sets Mobile
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.User.Metadata">
+            <summary>
+            Gets or sets Metadata
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.User.Organisations">
+            <summary>
+            Gets or sets Organisations
+            </summary>
+        </member>
+        <member name="T:Monosoft.Auth.DTO.UserGroup">
+            <summary>
+            User group definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.UserGroup.Usergroupid">
+            <summary>
+            Gets or sets Usergroupid
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.UserGroup.Name">
+            <summary>
+            Gets or sets Name
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.UserGroup.Organisationid">
+            <summary>
+            Gets or sets Organisationid
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.UserGroup.Claims">
+            <summary>
+            Gets or sets Claims
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.UserGroup.Users">
+            <summary>
+            Gets or sets Users
+            </summary>
+        </member>
+        <member name="T:Monosoft.Auth.DTO.UserGroupId">
+            <summary>
+            User group id definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.UserGroupId.Usergroupid">
+            <summary>
+            Gets or sets Usergroupid
+            </summary>
+        </member>
+        <member name="T:Monosoft.Auth.DTO.UserGroups">
+            <summary>
+            User groups definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.Auth.DTO.UserGroups.Usergroups">
+            <summary>
+            Gets or sets usergroups
+            </summary>
+        </member>
+        <member name="T:Monosoft.ServiceStore.DTO.Service">
+            <summary>
+            Service definition
+            </summary>
+        </member>
+        <member name="P:Monosoft.ServiceStore.DTO.Service.Name">
+            <summary>
+            Gets or sets Name
+            </summary>
+        </member>
+        <member name="M:Monosoft.ServiceStore.DTO.Service.SaveToDisk(System.Boolean)">
+            <summary>
+            Save the definition to disk
+            </summary>
+        </member>
+        <member name="M:Monosoft.ServiceStore.DTO.Service.LoadFromDisk(System.Guid)">
+            <summary>
+            Loads the definition from disk
+            </summary>
+        </member>
+        <member name="T:Monosoft.ServiceStore.DTO.ServiceProgramVersion">
+            <summary>
+            Class that defines a specific version of a service (microservice)
+            </summary>
+        </member>
+        <member name="P:Monosoft.ServiceStore.DTO.ServiceProgramVersion.ServiceId">
+            <summary>
+            Gets or sets the serviceId
+            </summary>
+        </member>
+        <member name="P:Monosoft.ServiceStore.DTO.ServiceProgramVersion.ReleaseNote">
+            <summary>
+            Gets or sets the ReleaseNote
+            </summary>
+        </member>
+        <member name="P:Monosoft.ServiceStore.DTO.ServiceProgramVersion.Version">
+            <summary>
+            Gets or sets the Version
+            </summary>
+        </member>
+        <member name="P:Monosoft.ServiceStore.DTO.ServiceProgramVersion.ZipFile">
+            <summary>
+            Gets or sets the ZipFile
+            </summary>
+        </member>
+        <member name="M:Monosoft.ServiceStore.DTO.ServiceProgramVersion.FindLocalVersions(System.Guid)">
+            <summary>
+            returns a list of local versions of this program, newest version first, oldest version last
+            </summary>
+            <param name="serviceId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Monosoft.ServiceStore.DTO.ServiceProgramVersion.SaveToDisk">
+            <summary>
+            Save the definition to disk
+            </summary>
+        </member>
+        <member name="M:Monosoft.ServiceStore.DTO.ServiceProgramVersion.LoadFromDisk(System.Guid,System.String)">
+            <summary>
+            Loads the definition from disk
+            </summary>
+        </member>
+    </members>
+</doc>

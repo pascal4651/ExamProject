@@ -1,0 +1,9 @@
+{
+ Id:"3b2683a5-1fc6-43db-adb5-5f15964b6bac",
+ Services:[
+	{ ServiceInfo: { Id : "0f11924b-1a3a-4f86-8d12-f304bf339bbd", Name:"Monosoft.Auth.Service" }, AutoUpdateSetting:3  },
+	{ ServiceInfo: { Id : "22eb7f42-8853-4874-b6e0-7ea97a7884f6", Name:"Monosoft.Organisation.Service" }, AutoUpdateSetting:3  },
+	{ ServiceInfo: { Id : "61ecd84a-fbe5-4cf5-8e44-ec1cd807a46f", Name:"Monosoft.Token.Service" }, AutoUpdateSetting:3  },
+	{ ServiceInfo: { Id : "c71b063c-2cff-4b1a-910a-c4fc334ed48c", Name:"Monosoft.User.Service" }, AutoUpdateSetting:3  }
+	]
+}
